@@ -1,0 +1,22 @@
+[project]
+name = "LLM-Semantic-Search"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+dependencies = [
+    "fastapi"
+    "uvicorn"
+    "pydantic"
+    "pydantic-settings" 
+    "sentence-transformers" 
+    "faiss-cpu"
+    "numpy"
+    "python-dotenv"
+]
+
+[tool.black]
+line-length = 88
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
